@@ -1,4 +1,5 @@
 		jQuery(document).ready(function($) {
+			$('body').append("<div id='hookdialog'></div>");
 			$( "#hooksearch" ).autocomplete({
 				source: hooks,
 				select: function (event, ui){
@@ -16,7 +17,7 @@
 					}
 					html += '</ul>';
 					$('#hookdialog').html(html);
-					$('#hookdialog').dialog({ minWidth: 450, title:title });
+					$('#hookdialog').dialog({ minWidth: 450, zIndex: 9999, title:title });
 				}
 			});
 		});

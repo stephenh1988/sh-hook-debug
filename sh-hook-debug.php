@@ -82,7 +82,7 @@ final class SH_Hook_Debug{
 
 		$wp_admin_bar->add_menu( array(
 			'id'        => 'hooks',
-			'title'     => 'Hooks <input type="text" id="hooksearch" value=""> <div id="hookdialog"></div>',
+			'title'     => 'Hooks <input type="text" id="hooksearch" value="">',
 		) );
 	}
 
